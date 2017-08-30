@@ -6,7 +6,8 @@ module.exports = class DGW {
 
 	constructor(appKey){
 		if (appKey){
-			Object.assign(this,c);
+			Object.assign(this,c.dgwSettings);
+			console.log(this);
 			this.appKey = appKey;
 			this.invoke = request[this.httpMethod];
 		} else {
